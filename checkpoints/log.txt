@@ -1,0 +1,400 @@
+2022-03-06 10:54:37
+======================training epoch 1======================
+Epoch 0 | loss = 0.033 | current = 0.915
+Training consumes 53.71 second
+
+======================validate epoch 1======================
+Epoch 0 | loss = 0.037 | current = 0.914
+Validation consumes 3.77 second
+2022-03-06 10:55:35
+======================training epoch 2======================
+Epoch 1 | loss = 0.033 | current = 0.917
+Training consumes 55.30 second
+
+======================validate epoch 2======================
+Epoch 1 | loss = 0.042 | current = 0.901
+Validation consumes 3.93 second
+2022-03-06 10:56:34
+======================training epoch 3======================
+Epoch 2 | loss = 0.032 | current = 0.918
+Training consumes 57.21 second
+
+======================validate epoch 3======================
+Epoch 2 | loss = 0.038 | current = 0.906
+Validation consumes 3.74 second
+2022-03-06 10:57:35
+======================training epoch 4======================
+Epoch 3 | loss = 0.032 | current = 0.919
+Training consumes 58.47 second
+
+======================validate epoch 4======================
+Epoch 3 | loss = 0.041 | current = 0.900
+Validation consumes 3.76 second
+2022-03-06 10:58:37
+======================training epoch 5======================
+Epoch 4 | loss = 0.031 | current = 0.927
+Training consumes 59.61 second
+
+======================validate epoch 5======================
+Epoch 4 | loss = 0.036 | current = 0.911
+Validation consumes 4.38 second
+2022-03-06 10:59:41
+======================training epoch 6======================
+Epoch 5 | loss = 0.031 | current = 0.921
+Training consumes 52.35 second
+
+======================validate epoch 6======================
+Epoch 5 | loss = 0.041 | current = 0.908
+Validation consumes 3.76 second
+2022-03-06 11:00:37
+======================training epoch 7======================
+Epoch 6 | loss = 0.030 | current = 0.925
+Training consumes 55.45 second
+
+======================validate epoch 7======================
+Epoch 6 | loss = 0.041 | current = 0.898
+Validation consumes 4.00 second
+2022-03-06 11:01:37
+======================training epoch 8======================
+Epoch 7 | loss = 0.030 | current = 0.924
+Training consumes 57.53 second
+
+======================validate epoch 8======================
+Epoch 7 | loss = 0.038 | current = 0.910
+Validation consumes 4.20 second
+2022-03-06 11:02:39
+======================training epoch 9======================
+Epoch 8 | loss = 0.029 | current = 0.927
+Training consumes 56.89 second
+
+======================validate epoch 9======================
+Epoch 8 | loss = 0.040 | current = 0.906
+Validation consumes 4.02 second
+2022-03-06 11:03:40
+======================training epoch 10======================
+Epoch 9 | loss = 0.029 | current = 0.927
+Training consumes 56.30 second
+
+======================validate epoch 10======================
+Epoch 9 | loss = 0.040 | current = 0.900
+Validation consumes 3.71 second
+2022-03-06 11:04:40
+======================training epoch 11======================
+Epoch 10 | loss = 0.028 | current = 0.933
+Training consumes 52.07 second
+
+======================validate epoch 11======================
+Epoch 10 | loss = 0.038 | current = 0.910
+Validation consumes 3.79 second
+2022-03-06 11:05:35
+======================training epoch 12======================
+Epoch 11 | loss = 0.028 | current = 0.930
+Training consumes 56.28 second
+
+======================validate epoch 12======================
+Epoch 11 | loss = 0.046 | current = 0.887
+Validation consumes 3.79 second
+2022-03-06 11:06:35
+======================training epoch 13======================
+Epoch 12 | loss = 0.028 | current = 0.929
+Training consumes 52.26 second
+
+======================validate epoch 13======================
+Epoch 12 | loss = 0.049 | current = 0.879
+Validation consumes 3.73 second
+2022-03-06 11:07:31
+======================training epoch 14======================
+Epoch 13 | loss = 0.028 | current = 0.928
+Training consumes 65.06 second
+
+======================validate epoch 14======================
+Epoch 13 | loss = 0.040 | current = 0.902
+Validation consumes 4.54 second
+2022-03-06 11:08:41
+======================training epoch 15======================
+Epoch 14 | loss = 0.027 | current = 0.931
+Training consumes 60.94 second
+
+======================validate epoch 15======================
+Epoch 14 | loss = 0.043 | current = 0.904
+Validation consumes 4.88 second
+2022-03-06 11:09:47
+======================training epoch 16======================
+Epoch 15 | loss = 0.027 | current = 0.933
+Training consumes 57.54 second
+
+======================validate epoch 16======================
+Epoch 15 | loss = 0.038 | current = 0.903
+Validation consumes 3.88 second
+2022-03-06 11:10:48
+======================training epoch 17======================
+Epoch 16 | loss = 0.026 | current = 0.936
+Training consumes 55.97 second
+
+======================validate epoch 17======================
+Epoch 16 | loss = 0.038 | current = 0.906
+Validation consumes 3.87 second
+2022-03-06 11:11:48
+======================training epoch 18======================
+Epoch 17 | loss = 0.026 | current = 0.934
+Training consumes 64.55 second
+
+======================validate epoch 18======================
+Epoch 17 | loss = 0.037 | current = 0.913
+Validation consumes 5.15 second
+2022-03-06 11:12:58
+======================training epoch 19======================
+Epoch 18 | loss = 0.025 | current = 0.940
+Training consumes 60.26 second
+
+======================validate epoch 19======================
+Epoch 18 | loss = 0.037 | current = 0.910
+Validation consumes 4.09 second
+2022-03-06 11:14:02
+======================training epoch 20======================
+Epoch 19 | loss = 0.026 | current = 0.936
+Training consumes 53.80 second
+
+======================validate epoch 20======================
+Epoch 19 | loss = 0.038 | current = 0.912
+Validation consumes 3.80 second
+2022-03-06 11:15:00
+======================training epoch 21======================
+Epoch 20 | loss = 0.025 | current = 0.938
+Training consumes 65.91 second
+
+======================validate epoch 21======================
+Epoch 20 | loss = 0.037 | current = 0.908
+Validation consumes 5.02 second
+2022-03-06 11:16:11
+======================training epoch 22======================
+Epoch 21 | loss = 0.024 | current = 0.939
+Training consumes 62.43 second
+
+======================validate epoch 22======================
+Epoch 21 | loss = 0.039 | current = 0.899
+Validation consumes 3.72 second
+2022-03-06 11:17:17
+======================training epoch 23======================
+Epoch 22 | loss = 0.024 | current = 0.939
+Training consumes 53.59 second
+
+======================validate epoch 23======================
+Epoch 22 | loss = 0.042 | current = 0.902
+Validation consumes 3.79 second
+2022-03-06 11:18:14
+======================training epoch 24======================
+Epoch 23 | loss = 0.024 | current = 0.941
+Training consumes 55.97 second
+
+======================validate epoch 24======================
+Epoch 23 | loss = 0.038 | current = 0.918
+Validation consumes 3.82 second
+2022-03-06 11:19:14
+======================training epoch 25======================
+Epoch 24 | loss = 0.023 | current = 0.939
+Training consumes 59.06 second
+
+======================validate epoch 25======================
+Epoch 24 | loss = 0.045 | current = 0.903
+Validation consumes 3.72 second
+2022-03-06 11:20:17
+======================training epoch 26======================
+Epoch 25 | loss = 0.023 | current = 0.939
+Training consumes 52.71 second
+
+======================validate epoch 26======================
+Epoch 25 | loss = 0.040 | current = 0.901
+Validation consumes 3.79 second
+2022-03-06 11:21:13
+======================training epoch 27======================
+Epoch 26 | loss = 0.023 | current = 0.943
+Training consumes 53.11 second
+
+======================validate epoch 27======================
+Epoch 26 | loss = 0.040 | current = 0.905
+Validation consumes 4.56 second
+2022-03-06 11:22:11
+======================training epoch 28======================
+Epoch 27 | loss = 0.023 | current = 0.945
+Training consumes 56.89 second
+
+======================validate epoch 28======================
+Epoch 27 | loss = 0.041 | current = 0.910
+Validation consumes 4.20 second
+2022-03-06 11:23:12
+======================training epoch 29======================
+Epoch 28 | loss = 0.022 | current = 0.945
+Training consumes 59.63 second
+
+======================validate epoch 29======================
+Epoch 28 | loss = 0.041 | current = 0.900
+Validation consumes 3.98 second
+2022-03-06 11:24:16
+======================training epoch 30======================
+Epoch 29 | loss = 0.022 | current = 0.945
+Training consumes 60.62 second
+
+======================validate epoch 30======================
+Epoch 29 | loss = 0.037 | current = 0.906
+Validation consumes 4.78 second
+2022-03-06 11:25:21
+======================training epoch 31======================
+Epoch 30 | loss = 0.022 | current = 0.944
+Training consumes 60.22 second
+
+======================validate epoch 31======================
+Epoch 30 | loss = 0.038 | current = 0.911
+Validation consumes 4.24 second
+2022-03-06 11:26:26
+======================training epoch 32======================
+Epoch 31 | loss = 0.022 | current = 0.944
+Training consumes 60.46 second
+
+======================validate epoch 32======================
+Epoch 31 | loss = 0.039 | current = 0.913
+Validation consumes 4.10 second
+2022-03-06 11:27:30
+======================training epoch 33======================
+Epoch 32 | loss = 0.022 | current = 0.943
+Training consumes 61.92 second
+
+======================validate epoch 33======================
+Epoch 32 | loss = 0.046 | current = 0.899
+Validation consumes 4.63 second
+2022-03-06 11:28:37
+======================training epoch 34======================
+Epoch 33 | loss = 0.021 | current = 0.947
+Training consumes 56.64 second
+
+======================validate epoch 34======================
+Epoch 33 | loss = 0.039 | current = 0.906
+Validation consumes 7.17 second
+2022-03-06 11:29:40
+======================training epoch 35======================
+Epoch 34 | loss = 0.021 | current = 0.946
+Training consumes 75.04 second
+
+======================validate epoch 35======================
+Epoch 34 | loss = 0.040 | current = 0.917
+Validation consumes 4.28 second
+2022-03-06 11:31:00
+======================training epoch 36======================
+Epoch 35 | loss = 0.020 | current = 0.951
+Training consumes 58.24 second
+
+======================validate epoch 36======================
+Epoch 35 | loss = 0.045 | current = 0.899
+Validation consumes 4.23 second
+2022-03-06 11:32:02
+======================training epoch 37======================
+Epoch 36 | loss = 0.020 | current = 0.947
+Training consumes 66.92 second
+
+======================validate epoch 37======================
+Epoch 36 | loss = 0.039 | current = 0.918
+Validation consumes 4.64 second
+2022-03-06 11:33:14
+======================training epoch 38======================
+Epoch 37 | loss = 0.020 | current = 0.949
+Training consumes 59.51 second
+
+======================validate epoch 38======================
+Epoch 37 | loss = 0.041 | current = 0.913
+Validation consumes 4.09 second
+2022-03-06 11:34:17
+======================training epoch 39======================
+Epoch 38 | loss = 0.020 | current = 0.949
+Training consumes 53.65 second
+
+======================validate epoch 39======================
+Epoch 38 | loss = 0.041 | current = 0.906
+Validation consumes 3.77 second
+2022-03-06 11:35:15
+======================training epoch 40======================
+Epoch 39 | loss = 0.019 | current = 0.951
+Training consumes 54.61 second
+
+======================validate epoch 40======================
+Epoch 39 | loss = 0.041 | current = 0.910
+Validation consumes 3.77 second
+2022-03-06 11:36:13
+======================training epoch 41======================
+Epoch 40 | loss = 0.019 | current = 0.950
+Training consumes 59.23 second
+
+======================validate epoch 41======================
+Epoch 40 | loss = 0.040 | current = 0.906
+Validation consumes 5.69 second
+2022-03-06 11:37:18
+======================training epoch 42======================
+Epoch 41 | loss = 0.019 | current = 0.950
+Training consumes 61.77 second
+
+======================validate epoch 42======================
+Epoch 41 | loss = 0.037 | current = 0.918
+Validation consumes 4.07 second
+2022-03-06 11:38:24
+======================training epoch 43======================
+Epoch 42 | loss = 0.019 | current = 0.950
+Training consumes 67.33 second
+
+======================validate epoch 43======================
+Epoch 42 | loss = 0.047 | current = 0.892
+Validation consumes 4.47 second
+2022-03-06 11:39:36
+======================training epoch 44======================
+Epoch 43 | loss = 0.018 | current = 0.953
+Training consumes 63.24 second
+
+======================validate epoch 44======================
+Epoch 43 | loss = 0.042 | current = 0.917
+Validation consumes 4.28 second
+2022-03-06 11:40:43
+======================training epoch 45======================
+Epoch 44 | loss = 0.018 | current = 0.950
+Training consumes 61.60 second
+
+======================validate epoch 45======================
+Epoch 44 | loss = 0.040 | current = 0.918
+Validation consumes 3.92 second
+2022-03-06 11:41:49
+======================training epoch 46======================
+Epoch 45 | loss = 0.018 | current = 0.953
+Training consumes 58.46 second
+
+======================validate epoch 46======================
+Epoch 45 | loss = 0.042 | current = 0.911
+Validation consumes 3.89 second
+2022-03-06 11:42:51
+======================training epoch 47======================
+Epoch 46 | loss = 0.018 | current = 0.955
+Training consumes 55.85 second
+
+======================validate epoch 47======================
+Epoch 46 | loss = 0.042 | current = 0.897
+Validation consumes 3.97 second
+2022-03-06 11:43:51
+======================training epoch 48======================
+Epoch 47 | loss = 0.018 | current = 0.955
+Training consumes 54.75 second
+
+======================validate epoch 48======================
+Epoch 47 | loss = 0.042 | current = 0.909
+Validation consumes 3.97 second
+2022-03-06 11:44:50
+======================training epoch 49======================
+Epoch 48 | loss = 0.018 | current = 0.951
+Training consumes 55.01 second
+
+======================validate epoch 49======================
+Epoch 48 | loss = 0.047 | current = 0.907
+Validation consumes 3.95 second
+2022-03-06 11:45:49
+======================training epoch 50======================
+Epoch 49 | loss = 0.017 | current = 0.957
+Training consumes 55.77 second
+
+======================validate epoch 50======================
+Epoch 49 | loss = 0.046 | current = 0.903
+Validation consumes 5.42 second
