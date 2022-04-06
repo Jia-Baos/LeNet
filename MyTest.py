@@ -1,3 +1,4 @@
+import cv2
 import torch
 from MyLeNet import MyNet
 from torch.autograd import Variable
@@ -25,7 +26,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 # 调用模型
 model = MyNet().to(device)
 
-model.load_state_dict(torch.load("D:\\PythonProject\\LeNet\save_model\\best_model.pth"))
+model.load_state_dict(torch.load("D:\\PythonProject\\LeNet\checkpoints\\best_model.pkl"))
 
 # 获取结果
 classes = [
@@ -45,15 +46,17 @@ classes = [
 show = ToPILImage()
 
 # 进入验证
-for i in range(20):
+for i in range(2):
     x, y = test_dataset[i][0], train_dataset[i][0]
     # print(test_dataset[i][0])
     # print(train_dataset[i][0])
     show(x).show()
-
-    x = Variable(torch.unsqueeze(x, dim=0).float(), requires_grad=False).to(device)
+    img = torch.unsqueeze(x, dim=0)
+    # print(img.size())
+    img = img.to(device)
     with torch.no_grad():
-        pred = model(x)
-
-        predicted, actual = classes[torch.argmax(pred[0])], classes[y]
-        print(f'Predicted: {predicted}', f'actual: {actual}')
+        output = torch.squeeze(model(img), dim=0)
+        # print(output)
+        predict = classes[torch.argmax(output)]
+        print(f'Predicted: {predict}')
+        print("\n")

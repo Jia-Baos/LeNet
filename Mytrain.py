@@ -28,7 +28,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # 调用MyNet模型，将模型数据转到GPU
 model = MyNet().to(device)
-model.load_state_dict(torch.load("D:\\PythonProject\\LeNet\\save_model\\2020-03-06.pkl"))
+model.load_state_dict(torch.load("D:\\PythonProject\\LeNet\\checkpoints\\best_model.pt"))
 
 # 定义损失函数
 loss_fn = nn.CrossEntropyLoss()
@@ -133,10 +133,10 @@ if __name__ == '__main__':
 
         # 保存最好的模型权重
         if a > min_acc:
-            folder = 'save_model'
+            folder = 'checkpoints'
             if not os.path.exists(folder):
-                os.mkdir('save_model')
+                os.mkdir('checkpoints')
             min_acc = a
             print("save best model\n")
-            torch.save(model.state_dict(), 'checkpoints/best_model.pkl')
+            torch.save(model.state_dict(), 'checkpoints/best_model.pt')
     print("Done!!!")
