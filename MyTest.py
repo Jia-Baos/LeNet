@@ -1,7 +1,5 @@
-import cv2
 import torch
 from MyLeNet import MyNet
-from torch.autograd import Variable
 from torch.utils.data import DataLoader
 from torchvision import datasets
 from torchvision.transforms import ToPILImage
@@ -26,7 +24,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 # 调用模型
 model = MyNet().to(device)
 
-model.load_state_dict(torch.load("D:\\PythonProject\\LeNet\checkpoints\\best_model.pkl"))
+model.load_state_dict(torch.load("D:\\PythonProject\\LeNet\checkpoints\\best_model.pt"))
 
 # 获取结果
 classes = [
