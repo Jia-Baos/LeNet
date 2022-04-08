@@ -17,12 +17,14 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # 调用模型
 model = MyNet().to(device)
-model.load_state_dict(torch.load("D:\\PythonProject\\LeNet\\checkpoints\\best_model.pt"))
+model.load_state_dict(torch.load("D:\\PythonProject\\LeNet\\checkpoints\\newbest_model.pt"))
 
 # 获取结果
 classes = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 if __name__ == '__main__':
+
+    num_all, num_right = 0.0, 0.0
 
     # 图像的读写和预处理
     img_list = os.listdir(datalist)
@@ -33,8 +35,8 @@ if __name__ == '__main__':
         threshold = 50
         for i in range(28):
             for j in range(28):
-                val = img.getpixel((i, j))
-                img.putpixel((i, j), 255 - val)
+                # val = img.getpixel((i, j))
+                # img.putpixel((i, j), 255 - val)
                 if img.getpixel((i, j)) < threshold:
                     img.putpixel((i, j), 0)
                 else:
@@ -42,6 +44,7 @@ if __name__ == '__main__':
 
         # img.show()
         img = trans(img)
+        print(img_name[0])
         print(f'name: {img_path}')
         # print(img.size())
         img = torch.unsqueeze(img, dim=0)
@@ -53,3 +56,8 @@ if __name__ == '__main__':
             predict = classes[torch.argmax(output)]
             print(f'Predicted: {predict}')
             print("\n")
+            num_all += 1
+            if img_name[0] == predict:
+                num_right += 1
+    print("Accuracy: {}".format(num_right/num_all))
+

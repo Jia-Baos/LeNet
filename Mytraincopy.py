@@ -3,33 +3,32 @@ from torch import nn
 from MyLeNet import MyNet
 from torch.optim import lr_scheduler
 from torch.utils.data import DataLoader
-from torchvision import transforms
+from torchvision import datasets, transforms
 import os
 import time
 import datetime
-from MyData import MyDataSet
 
 checkpoints_dir = "D:\\PythonProject\\LeNet\\checkpoints"
-new_data_path = "D:\\PythonProject\\LeNet\\newdata"
+
 # 将数据转化为tensor
 data_transform = transforms.Compose([
     transforms.ToTensor()
 ])
 
 # 加载训练数据集
-train_dataset = MyDataSet(new_data_path, mode='train')
-train_dataloader = DataLoader(dataset=train_dataset, batch_size=4, shuffle=True)
+train_dataset = datasets.MNIST(root='./data', train=True, transform=data_transform, download=True)
+train_dataloader = DataLoader(dataset=train_dataset, batch_size=8, shuffle=True)
 
 # 加载测试数据集
-val_dataset = MyDataSet(new_data_path, mode='val')
-val_dataloader = DataLoader(dataset=val_dataset, batch_size=4, shuffle=True)
+test_dataset = datasets.MNIST(root='./data', train=False, transform=data_transform, download=True)
+test_dataloader = DataLoader(dataset=test_dataset, batch_size=8, shuffle=True)
 
 # 如果有显卡，可以转到GPU
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # 调用MyNet模型，将模型数据转到GPU
 model = MyNet().to(device)
-# model.load_state_dict(torch.load("D:\\PythonProject\\LeNet\\checkpoints\\best_model.pt"))
+model.load_state_dict(torch.load("D:\\PythonProject\\LeNet\\checkpoints\\best_model.pt"))
 
 # 定义损失函数
 loss_fn = nn.CrossEntropyLoss()
@@ -94,7 +93,7 @@ def val(dataloader, model, loss_fn):
         log_file.flush()
         log_file.close()
 
-        return loss / n
+        return current / n
 
 
 # 开始训练
@@ -102,8 +101,8 @@ if __name__ == '__main__':
     if not os.path.exists(checkpoints_dir):
         os.mkdir(checkpoints_dir)
 
-    epochs = 10
-    max_loss = 1
+    epochs = 50
+    min_acc = 0
 
     for epoch in range(epochs):
         print("\nepoch: %d" % (epoch + 1))
@@ -125,7 +124,7 @@ if __name__ == '__main__':
         with open(os.path.join(checkpoints_dir, "log.txt"), "a+") as log_file:
             log_file.write("\n======================validate epoch %d======================\n" % (epoch + 1))
         t1 = time.time()
-        a = val(val_dataloader, model, loss_fn)
+        a = val(test_dataloader, model, loss_fn)
         t2 = time.time()
 
         print("Validation consumes %.2f second" % (t2 - t1))
@@ -133,11 +132,11 @@ if __name__ == '__main__':
             log_file.write("Validation consumes %.2f second\n\n" % (t2 - t1))
 
         # 保存最好的模型权重
-        if a < max_loss:
+        if a > min_acc:
             folder = 'checkpoints'
             if not os.path.exists(folder):
                 os.mkdir('checkpoints')
-            max_loss = a
+            min_acc = a
             print("save best model\n")
-            torch.save(model.state_dict(), 'checkpoints/newbest_model.pt')
+            torch.save(model.state_dict(), 'checkpoints/best_model.pt')
     print("Done!!!")
